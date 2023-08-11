@@ -12,9 +12,9 @@ function App() {
         <List people={people} />
         <button onClick={() => setPeople([])}>clear all</button>
       </section>
-      <section className='container'>
+      <section className='container' style={{ marginLeft : 50}}>
         <h3> New birthday</h3>
-        <NewBD />
+        <NewBD people={people} setPeople={setPeople}/>
         {/* <button>Add</button> */}
       </section>
     </main>

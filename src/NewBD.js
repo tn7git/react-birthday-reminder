@@ -30,7 +30,13 @@ function NewBD({people, setPeople}){
         console.log (people);
 
 
-        setPeople({id : people.length +1, name : people.name, age: people.year});
+        setPeople({
+            ...people,
+            id: people.length + 1
+            // id: people.length + 1, name: inputs.name, age: inputs.year, image: ''
+        });
+        
+        console.log (people.name);
     }
 
     const handleChangeSelect = (e) => {
