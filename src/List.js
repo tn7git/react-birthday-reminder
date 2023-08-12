@@ -1,6 +1,6 @@
 import React from 'react';
 
-const List = ({ people }) => {
+const List = ({ people, removePeople }) => {
   return (
     <>
       {people.map((person) => {
@@ -10,8 +10,9 @@ const List = ({ people }) => {
             <img src={image} alt={name} />
             <div>
               <h4>{name}</h4>
-              <p>{age} years</p>
+              <p>{age} years</p>              
             </div>
+            <p><button onClick={()=>removePeople(id)}>Delete</button></p>
           </article>
         );
       })}

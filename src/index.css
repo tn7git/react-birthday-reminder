@@ -156,7 +156,7 @@ main {
 }
 .person {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
   column-gap: 0.75rem;
   margin-bottom: 1.5rem;
   align-items: center;
@@ -190,6 +190,25 @@ main {
   cursor: pointer;
 }
 
-input {
-  min-width: 100px;
+
+select , input {
+      width: 100%;
+        padding: 5px;
+        border: solid 3px var(--clr-pink);
+        border-radius: 7px;
+        font-size: 16px;
+}
+
+#name {
+  width: 70%;
+}
+#year {
+  width: 30%
+}
+
+.born-year {  
+    text-transform: capitalize;    
+    font-size: 16px;
+        text-align: center;
+          padding: 10px px;
 }
