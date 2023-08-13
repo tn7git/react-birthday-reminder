@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
-import data from './data';
+// import data from './data';
 
 
 
